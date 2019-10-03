@@ -1,0 +1,21 @@
+﻿server:
+  port: 8088
+spring:
+  redis:
+    database: 0
+    host: 192.168.25.142
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 10000
+
+#配置spring-session中redis的相关配置
+redis:
+  hostname: 192.168.25.131
+  port: 6379
+  password: 123456
