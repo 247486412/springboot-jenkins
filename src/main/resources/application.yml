@@ -13,9 +13,6 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 10000
-
-#配置spring-session中redis的相关配置
-redis:
-  hostname: 192.168.25.131
-  port: 6379
-  password: 123456
+  session:
+    #session存储类型为redis
+    store-type: redis
